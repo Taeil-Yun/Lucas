@@ -25,7 +25,7 @@ class _FindRoomInfoState extends State<FindRoomInfo> {
 
   Future<Position> getLocation() async {
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
-    print('asdsasd///////////////${position.latitude}');
+    print('console log - ${position.latitude}');
     return position;
   }
 
